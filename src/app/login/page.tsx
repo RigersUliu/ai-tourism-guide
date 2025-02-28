@@ -1,16 +1,16 @@
-// app/login/page.tsx
-import { useState } from 'react';
-import { useRouter } from 'next/navigation';
+"use client";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const LoginPage = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
   const router = useRouter();
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
     // Authentication logic (JWT/OAuth) will go here.
-    router.push('/map');
+    router.push("/map");
   };
 
   return (
@@ -31,7 +31,10 @@ const LoginPage = () => {
           onChange={(e) => setPassword(e.target.value)}
           className="w-full p-3 mt-4 border border-gray-300 rounded"
         />
-        <button type="submit" className="w-full p-3 mt-6 bg-blue-500 text-white rounded hover:bg-blue-600">
+        <button
+          type="submit"
+          className="w-full p-3 mt-6 bg-blue-500 text-white rounded hover:bg-blue-600"
+        >
           Login
         </button>
       </form>
