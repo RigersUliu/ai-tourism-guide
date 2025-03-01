@@ -10,9 +10,11 @@ const LoginPage = () => {
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
     // Example: Assume authentication is successful for now
-    // You can add your actual authentication logic here (JWT, OAuth, etc.)
-
-    // After successful login, redirect to the map page
+    //* Authentication logic here (JWT, OAuth, etc.)
+    /**
+     * TODO: Add authentication logic here
+     * TODO: Redirect to the map page after successful login
+     */
     router.push("/map");
   };
 
@@ -54,7 +56,7 @@ const LoginPage = () => {
         </form>
         <p className="text-center text-sm text-gray-600 mt-4">
           Don't have an account?{" "}
-          <a href="/signup" className="text-blue-600 hover:underline">
+          <a href="/signup" className="hover:underline">
             Sign Up
           </a>
         </p>

@@ -9,17 +9,20 @@
   --background: #f3f3f3;
   --foreground: #171717;
   --button-bg: #00bf84;
+  --main-font: 'Poppins', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --button-bg: #00bf84;
   }
 }
 
 * {
   color: #000;
+  font-family: var(--main-fonts);
 }
 
 button {
