@@ -9,7 +9,7 @@ export default function SignUpPage() {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [error, setError] = useState("");
 
-  const handleSubmit = (e: { preventDefault: () => void; }) => {
+  const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
     setError("");
 
@@ -73,12 +73,6 @@ export default function SignUpPage() {
             <label className="block text-sm font-medium text-gray-700">
               Confirm Password
             </label>
-            <a
-              href="/forgot-password"
-              className="text-blue-600 text-sm hover:underline"
-            >
-              Forgot Password?
-            </a>
           </div>
           <input
             type="password"
