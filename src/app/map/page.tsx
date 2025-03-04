@@ -13,16 +13,16 @@ const MapPage = () => {
       <h1 className="text-3xl font-bold">Select a City</h1>
       <div className="mt-6 space-x-4">
         <button
-          onClick={() => handleCitySelection("Albania")}
+          onClick={() => handleCitySelection("Durres")}
           className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
         >
-          Albania
+          Durres
         </button>
         <button
-          onClick={() => handleCitySelection("Paris")}
+          onClick={() => handleCitySelection("Himare")}
           className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
         >
-          Paris
+          Himare
         </button>
       </div>
     </div>
