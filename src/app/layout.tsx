@@ -25,9 +25,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-br from-blue-50 via-teal-100 to-purple-200 overflow-hidden`}
       >
-        {children}
+        {/* Background Animation Layer */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(255,255,255,0.3)_10%,_transparent_50%)]"></div>
+        <div className="absolute top-[-20%] left-[10%] w-[400px] h-[400px] bg-blue-300 opacity-20 blur-3xl rounded-full animate-pulse"></div>
+        <div className="absolute bottom-[-20%] right-[10%] w-[500px] h-[500px] bg-purple-300 opacity-20 blur-3xl rounded-full animate-pulse"></div>
+
+        {/* Main Content Wrapper */}
+        <div className="relative z-10">
+          {children}
+        </div>
       </body>
     </html>
   );
