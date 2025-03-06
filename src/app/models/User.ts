@@ -5,7 +5,7 @@ export interface IUser extends Document {
   name?: string;
   image?: string;
   chatHistory: { message: string; response: string; timestamp: Date }[];
-  preferences: Record<string, any>;
+  preferences: Record<string, string | number | boolean>;
 }
 
 const UserSchema: Schema = new Schema({

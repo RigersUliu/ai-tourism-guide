@@ -1,14 +1,14 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 
-const ChatbotPage = () => {
+const ChatContent = () => {
   const [message, setMessage] = useState("");
   const [chatHistory, setChatHistory] = useState<string[]>([]);
   const searchParams = useSearchParams();
   const city = searchParams.get("city");
 
-  const fetchAIResponse = async (query: string) => {
+  const fetchAIResponse = async () => {
     const res = await fetch("/api/ai", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -24,7 +24,7 @@ const ChatbotPage = () => {
     e.preventDefault();
     if (!message.trim()) return;
     setChatHistory((prev) => [...prev, `You: ${message}`]);
-    fetchAIResponse(message);
+    fetchAIResponse();
     setMessage("");
   };
 
@@ -76,6 +76,14 @@ const ChatbotPage = () => {
         </form>
       </div>
     </div>
+  );
+};
+
+const ChatbotPage = () => {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ChatContent />
+    </Suspense>
   );
 };
 
