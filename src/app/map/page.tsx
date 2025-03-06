@@ -20,7 +20,7 @@ const MapPage = () => {
         <h1 className="text-4xl font-extrabold text-gray-800 text-center drop-shadow-lg">
           Select a City
         </h1>
-        <div className="mt-6 space-x-4 flex justify-center">
+        <div className="mt-6 grid grid-cols-3 gap-4 justify-items-center">
           <button
             onClick={() => handleCitySelection("Durres")}
             className="px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-blue-500 to-teal-600 rounded-lg shadow-lg transition-all transform hover:scale-110 hover:rotate-1 active:scale-95 active:rotate-0 before:absolute before:inset-0 before:bg-blue-400 before:blur-lg before:opacity-30 hover:before:opacity-50"
@@ -44,6 +44,12 @@ const MapPage = () => {
             className="px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-blue-500 to-teal-600 rounded-lg shadow-lg transition-all transform hover:scale-110 hover:rotate-1 active:scale-95 active:rotate-0 before:absolute before:inset-0 before:bg-blue-400 before:blur-lg before:opacity-30 hover:before:opacity-50"
           >
             Saranda
+          </button>
+          <button
+            onClick={() => handleCitySelection("Shkodra")}
+            className="px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-blue-500 to-teal-600 rounded-lg shadow-lg transition-all transform hover:scale-110 hover:rotate-1 active:scale-95 active:rotate-0 before:absolute before:inset-0 before:bg-blue-400 before:blur-lg before:opacity-30 hover:before:opacity-50"
+          >
+            Shkodra
           </button>
         </div>
       </div>

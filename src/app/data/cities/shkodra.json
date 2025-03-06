@@ -1,0 +1,40 @@
+{
+  "description": "Shkodra, one of Albania's oldest and most historic cities, is a cultural and economic center in northern Albania known for its rich heritage, beautiful lake, and diverse religious harmony.",
+  "attractions": [
+    {
+      "name": "Rozafa Castle",
+      "description": "Ancient fortress with stunning views of Lake Shkodra and surrounding mountains, featuring rich historical significance and legendary tales.",
+      "location": "Rruga Rozafa, Shkodër, Albania"
+    },
+    {
+      "name": "Marubi National Museum of Photography",
+      "description": "Historic museum housing the first photographs taken in Albania, documenting over 100 years of Albanian life and culture.",
+      "location": "Rruga Kolë Idromeno, Shkodër, Albania"
+    },
+    {
+      "name": "Lead Mosque (Xhamia e Plumbit)",
+      "description": "Historic mosque known for its unique lead-covered dome and beautiful Ottoman architecture.",
+      "location": "City Center, Shkodër, Albania"
+    },
+    {
+      "name": "Lake Shkodra",
+      "description": "The largest lake in Southern Europe, perfect for birdwatching, boat tours, and fishing experiences.",
+      "location": "Shkodër, Albania"
+    },
+    {
+      "name": "Mesi Bridge",
+      "description": "Ottoman-era stone bridge showcasing remarkable engineering and architectural heritage.",
+      "location": "Mes, Shkodër, Albania"
+    }
+  ],
+  "culture": {
+    "history": "Founded in the 4th century BC, Shkodra has been an important cultural and economic center throughout history. The city has been ruled by Illyrians, Romans, Venetians, and Ottomans, each leaving their mark on its rich cultural heritage.",
+    "customs": "Known for its exceptional hospitality, religious harmony, and rich traditions in music, literature, and photography. The city celebrates various cultural festivals throughout the year and maintains strong traditions in craftsmanship and local customs.",
+    "food": "Famous for lake fish specialties, particularly carp from Lake Shkodra, traditional Albanian dishes, and unique local pastries. The city is known for its culinary heritage combining Mediterranean and Balkan influences."
+  },
+  "practicalInfo": {
+    "transportation": "The city center is walkable and bicycle-friendly with rental services available. Local buses and taxis connect major points of interest. The city is well-connected to Tirana via regular bus services, and there are boat tours available on Lake Shkodra.",
+    "accommodation": "Options range from modern hotels in the city center to traditional guesthouses and eco-friendly accommodations near the lake. Various price ranges are available to suit different budgets, with peak season being summer months.",
+    "emergencyContacts": "Emergency: 112, Police: 129, Ambulance: 127, Tourist Information Office: +355 22 800 000"
+  }
+}
